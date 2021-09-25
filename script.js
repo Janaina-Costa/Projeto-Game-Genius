@@ -1,3 +1,4 @@
+
 let ordemJogo = []
 let ordemClick = []
 let pontos = 0
@@ -105,7 +106,7 @@ let proximoNivel= () =>{
 //game over
 
 let gameOver = ()=>{
-    alert(`PONTUAÇÃO: ${pontos}\n Você perdeu :(\n...Aperte OK para recomeçar`)
+    alert(`PONTUAÇÃO: ${pontos}\n Você perdeu :( \nAperte OK para recomeçar`)
     ordemClick=[]
     ordemJogo = []
     clearTimeout(clicando)
@@ -116,7 +117,8 @@ let gameOver = ()=>{
 //iniciar jogo
 
 let playGame = ()=>{
-    alert('Muito bem vindo ao salão retrô!!!\n Este é o Genius\n Are you read??!!')
+    
+    alert('Muito bem vindo ao salão retrô!!!\n Este é o Genius\n Aperte OK para iniciar!')   
     pontos = 0
 
     proximoNivel()
@@ -131,5 +133,4 @@ blue.onclick = ()=> clicando(3)
 
 
 //Inicio do jogo
-
 playGame()
